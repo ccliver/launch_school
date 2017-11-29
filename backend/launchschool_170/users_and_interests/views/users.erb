@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+  <h3><a href="/user/<%= user[0] %>"><%= user[0].capitalize %></a></h3>
+  <b>Email: </b><%= user[1][:email] %><br />
+  <b>Interests:</b><br />
+  <ul>
+    <% user[1][:interests].each do |interest| %>
+    <li><%= interest %></li>
+    <% end %>
+  </ul>
+<% end %>

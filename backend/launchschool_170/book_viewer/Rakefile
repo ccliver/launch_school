@@ -1,0 +1,7 @@
+desc 'Run book viewer'
+task :default => :run
+
+desc 'Run book viewer'
+task :run do
+  sh 'bundle exec ruby ./book_viewer.rb'
+end

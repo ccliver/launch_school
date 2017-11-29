@@ -1,0 +1,10 @@
+<% if session[:message] %>
+  <div class='message'>
+    <p><%= session.delete(:message) %></p>
+  </div>
+<% end %>
+<form name='login' action='/users/signin' method='post'>
+  <label>Username: </label><input type='text' name='username' /><br />
+  <label>Password: </label><input type='text' name='password' /><br />
+  <button type='submit'>Sign In</button>
+</form>

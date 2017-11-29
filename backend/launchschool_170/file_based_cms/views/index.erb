@@ -1,0 +1,25 @@
+<% if session[:message] %>
+  <div class='message'>
+    <p><%= session.delete(:message) %></p>
+  </div>
+<% end %>
+<p><a href='/new' action='get'>New Document</a></p>
+<ul>
+  <% @files.sort.each do |file| %>
+    <li><a href="/<%= file %>"><%= file %></a>&nbsp;
+        <a href='/<%= file %>/edit'>edit</a>&nbsp;
+        <form class="inline" method="post" action="/<%= file %>/delete">
+          <button type="submit">delete</button>
+        </form>
+    </li>
+  <% end %>
+</ul>
+
+<% if session[:username] %>
+  <form action='/users/signout' method='post'>
+    <em>Signed in as <%= session[:username] %>.</em>
+    <button type='submit'>Sign Out</button>
+  </form>
+<% else %>
+  <p class="user-status"><a href="/users/signin">Sign In</a></p>
+<% end %>

@@ -1,0 +1,23 @@
+1.  (1..10).each { |x| puts ' ' * x << 'The Flintstones Rock!' }
+
+2.  It's a syntax error because you can't concatenate an integer and string. You could use #to_s on the integer or interpolate the value of 40 + 2 into the string with #{}.
+
+3. Switch the block to while loop:
+      while dividend > 0
+        divisors << number / dividend if number % dividend == 0
+        dividend -= 1
+      end
+
+4. The << implementation mutates the buffer parameter, the + implementation does not mutate the input.
+
+5. The #fib method scope does not have access to the limit variable. limit would need to either be defined as a global, defined within the method, or passed into the method.
+
+6. Refactor the code so that it does not mutate the parameters and instead returns new values (by using += instead of <<).
+
+7. 34
+
+8. Yes, because modifying hash keys with #[] mutates the hash.
+
+9. paper
+
+10. no

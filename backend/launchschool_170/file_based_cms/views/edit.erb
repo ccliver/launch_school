@@ -1,0 +1,6 @@
+<h3>Edit content of <%= params[:filename] %>:
+<form action='/<%= params[:filename] %>/edit' method='post'>
+  <textarea cols=80 rows=40 name='content'><%= @content %></textarea>
+  <br />
+  <button type='submit'>Save Changes</button>
+</form>

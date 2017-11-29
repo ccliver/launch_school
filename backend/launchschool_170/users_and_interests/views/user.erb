@@ -1,0 +1,15 @@
+  <h3><%= params[:name].capitalize %></h3>
+  <b>Email: </b><%= @user[:email] %><br />
+  <b>Interests:</b><br />
+  <ul>
+    <% @user[:interests].each do |interest| %>
+    <li><%= interest %></li>
+    <% end %>
+  </ul>
+
+  <br />
+  <p>Other users:</p>
+  <% @users.each do |user| %>
+    <% next if user[0].to_s == params[:name] %>
+    <b><a href="/user/<%= user[0] %>"><%= user[0].capitalize %></a></b>
+  <% end %>

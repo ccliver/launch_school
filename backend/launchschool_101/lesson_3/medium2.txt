@@ -1,0 +1,15 @@
+1. - Before the block the a_outer and d_outer share the same object id, the other two differ.
+   - Object ids remain the same at the first set of #puts calls in the block.
+   - At the second set of #puts calls all of the object ids will be different.
+   - 
+
+2. 
+
+3. After the call to #tricky_method my_array will have value ["pumpkins", "rutabaga"] because #<< mutates the caller. my_string will be the same value, because #+ returns a new String with "rutabaga" appeded, but does not mutate my_string.
+
+4. After the call to #tricky_method_two you will have basically the reverse of question 3, the string will get mutated and the array will not for the same reasons (#<< mutates the caller but #= does not).
+
+5. 
+def color_valid(color)
+  color == "blue" || color == "green"
+end

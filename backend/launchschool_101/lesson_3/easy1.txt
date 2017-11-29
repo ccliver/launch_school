@@ -1,0 +1,24 @@
+1. The entire array unchanged, because Array#uniq does not mutate it.
+
+2. ! typically indicates that the method will mutate the caller. ? typically indicates that the method will return a boolean.
+    1. != is the not equal to operator, and should be used when determining whether two expressions are not equivalent.
+    2. ! would reverse the return value of the expresssion.
+    3. ! at the end of a method call typically indicates that it will mutate the caller.
+    4. That is a syntax error.
+    5. ? at the end of a method call typically indicates it will return a boolean.
+    6. That would basically have no effect, by negating the negative.
+
+3. advice.gsub('important', 'urgent')
+
+4. #delete_at deletes the item at the passed in array index, #delete deletes any item equivalent to the value passed in.
+
+5. (10..100).cover?(42)
+
+6. "Four score and " + famous_words
+   "Four score and " << famous_words
+
+7. 42
+
+8. flintstones.flatten!
+
+9. flintstones.assoc('Barney)

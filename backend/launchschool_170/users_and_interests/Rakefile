@@ -1,0 +1,7 @@
+desc 'Users and Interests project for LS'
+task :default => :run
+
+desc 'Run users and interests'
+task :run do
+  sh 'bundle exec ruby ./users_and_interests.rb'
+end

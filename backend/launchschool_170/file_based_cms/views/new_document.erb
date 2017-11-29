@@ -1,0 +1,10 @@
+<% if session[:message] %>
+  <div class='message'>
+    <p><%= session.delete(:message) %></p>
+  </div>
+<% end %>
+<form name='new_document' action='/new' method='post'>
+  <label>Add a new document:</label><br />
+  <input type='text' name='document_name' />
+  <button type='Submit'>Create</button>
+</form>
