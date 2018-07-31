@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS billing;
+
+CREATE DATABASE billing;

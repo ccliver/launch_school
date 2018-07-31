@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS  devices;
+
+CREATE TABLE devices (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);

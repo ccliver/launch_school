@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS parts;
+
+CREATE TABLE parts (
+  id SERIAL PRIMARY KEY,
+  part_number INTEGER UNIQUE NOT NULL,
+  device_id INTEGER REFERENCES devices (id)
+);
