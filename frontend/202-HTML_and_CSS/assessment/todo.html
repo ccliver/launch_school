@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Launch School 209 Assessment</title>
+    <meta charset="utf-8" />
+  
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <label for="nav-toggle">
+      <img id="hamburger" src="assessment_209/hamburger.png" alt="hamburger" />
+    </label>
+
+    <main id="container">
+      <nav>
+        <ul>
+          <li>
+            <img src="assessment_209/all-todos.png" alt="all todos" /><h3>All Todos</h3><span class="todo-count">18</span>
+          </li>
+          <li class="nav-todo active">
+            <h3>02/16</h3><span class="active">8</span>
+          </li>
+          <li class="nav-todo">
+            <h3>03/16</h3><span class="todo-count">2</span>
+          </li>
+          <li class="nav-todo">
+            <h3>04/16</h3><span class="todo-count">1</span>
+          </li>
+          <li class="nav-todo">
+            <h3>05/16</h3><span class="todo-count">1</span>
+          </li>
+          <li class="nav-todo">
+            <h3>06/16</h3><span class="todo-count">6</span>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="assessment_209/done.png" alt="done todos" /><h3>Completed</h3>
+          </li>
+          <li class="nav-todo completed-todo">
+            <h3><a href="#">02/15</a></h3>
+          </li>
+          <li class="nav-todo completed-todo">
+            <h3><a href="#">03/15</a></h3>
+          </li>
+          <li class="nav-todo completed-todo">
+            <h3><a href="#">04/15</a></h3>
+          </li>
+          <li class="nav-todo completed-todo">
+            <h3><a href="#">05/15</a></h3>
+          </li>
+          <li class="nav-todo completed-todo">
+            <h3><a href="#">06/14</a></h3>
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <section id="todos">
+        <h2>02/16<span class="todo-count">8</span></h2>
+
+        <ul id="todo-list">
+          <li>
+            <img src="assessment_209/plus.png" alt="plus" /><h3>Add new to do</h3>
+          </li>
+          <li>
+            <img src="assessment_209/unticked-box.png" alt="unticked box" />
+            <h3><a href="#open-modal">Item 1</a></h3>
+            <img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/unticked-box.png" alt="unticked box" /><h3><a href="#">Item 2</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/ticked-box.png" alt="ticked box" /><h3><a href="#">Item 3</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/ticked-box.png" alt="ticked box" /><h3><a href="#">Item 4</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/ticked-box.png" alt="ticked box" /><h3><a href="#">Item 5</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/unticked-box.png" alt="unticked box" /><h3><a href="#">Item 6</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/unticked-box.png" alt="unticked box" /><h3><a href="#">Item 7</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/unticked-box.png" alt="unticked box" /><h3><a href="#">Item 8</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+          <li>
+            <img src="assessment_209/unticked-box.png" alt="unticked box" /><h3><a href="#">Item 9</a></h3><img class="trash" src="assessment_209/trash.png" alt="trash" />
+          </li>
+        </ul>
+        </section>
+      </section>
+
+      <section id="open-modal" class="modal-dialog">
+        <form action="#" class="side-by-side">
+          <fieldset>
+            <dl>
+              <dt><label for="title">Title</label></dt>
+              <dd><input type="text" id="title" name="title" value="Item 1"/></dd>
+
+              <dt><label>Due Date</label></dt>
+              <dd>
+                <fieldset id="due_date">
+                  <select id="due_date_day" name="due_date_day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  /
+                  <select id="due_date_month" name="due_date_month">
+                    <option>Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Juy">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                  </select>
+                  /
+                  <select id="due_date_year" name="due_date_year">
+                    <option>Year</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                  </select>
+                </fieldset>
+              </dd>
+
+              <dt id="description_label"><label for="description">Description</label></dt>
+              <dd><textarea id="description" name="description">Description</textarea></dd>
+
+            </dl>
+            <fieldset id="form-buttons"> 
+              <input type="submit" value="Save" />
+              <input type="submit" value="Mark as Complete"/>
+            </fieldset>
+          </fieldset>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>

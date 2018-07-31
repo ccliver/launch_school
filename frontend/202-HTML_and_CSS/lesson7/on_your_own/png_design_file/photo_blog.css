@@ -1,0 +1,168 @@
+/*
+----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:  	Tantek Celik, Shane Riley
+    Version:  	(CC) 2010 Some Rights Reserved
+                - http://creativecommons.org/licenses/by/2.0
+Description:	Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6, pre, code { font-size: 1rem; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+fieldset,input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img, fieldset { border: none; }
+address { font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+
+mark {
+  color: inherit;
+  background: transparent;
+}
+
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+  background-color: #D1DDC0;
+  width: 1100px;
+  height: 100%;
+  background: linear-gradient(#D0DCBF, #FFFFFF);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+header img {
+  margin: 20px 0 0 90px;
+  display: inline-block;
+}
+
+header figure {
+  height: 140px;
+}
+
+header figcaption {
+  display: inline-block;
+  vertical-align: 56%;
+  font-size: 36px;
+  color: #173440;
+  padding-left: 6px;
+}
+
+
+header nav {
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-right: 4px;
+}
+
+header nav  {
+  width: 580px;
+  margin-right: 45px;
+}
+
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+header nav ul li {
+  background-color: white;
+  height: 55px;
+  width: 130px;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #D1DDC0;
+  margin-top: 30px;
+  align-self: center;
+  justify-self: center;
+  margin-top: -5px;
+  font-size: 1.1rem;
+}
+
+.nav-active {
+  background-color: #8FAA9D;
+}
+
+#main {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  width: 960px;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+  overflow: auto;
+  padding-bottom: 50px;
+  box-shadow: 2px 4px 5px 0px #cccccc;
+}
+
+#img-masthead {
+  width: 900px;
+  height: 390px;
+  padding-top: 30px;
+}
+
+main h1 {
+  width: 900px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #A8B6BC;
+  font-weight: bold;
+}
+
+#main p {
+  margin: 15px 0 15px 0;
+  width: 890px;
+  clear: left;
+  margin-left: 30px;
+  text-align: left;
+  line-height: 25px;
+  color: #A8B6BC;
+  font-size: 1.1rem;
+}
+
+#img-article {
+  float: right;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+footer {
+  width: 1100px;
+  color: #A8B6BC;
+  font-size: .8rem;
+  padding: 15px 0 50px 70px;
+}

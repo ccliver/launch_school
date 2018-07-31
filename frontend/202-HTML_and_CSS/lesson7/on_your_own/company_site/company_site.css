@@ -1,0 +1,201 @@
+html {
+  box-sizing: border-box;
+  font: normal 20px Avenir, "Nunito Sans", Helvetica, Arial, sans-serif;
+  color: #45494D;
+}
+
+body {
+  max-width: 1200px;
+}
+
+header {
+  background: #2f2840 url("spacedesign/images/bg_body.gif") 50% 0 repeat;
+  height: 570px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+header img {
+  padding-top: 135px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav li {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 110px 32px 75px 32px;
+}
+
+header nav a {
+  color: #CACACA;
+  text-decoration: none;
+}
+
+header nav a.active {
+  color: #68B8FC;
+  font-weight: bold;
+}
+
+
+main {
+  background: white;
+  text-align: center;
+}
+
+main > section {
+  padding-top: 95px;
+  margin-bottom: 35px;
+}
+
+
+main h2 {
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+main h3 {
+  color: #5156AF;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 15px;
+}
+
+main p {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  letter-spacing: 0.055rem;
+  line-height: 1.2rem;
+}
+
+main h2::before,
+main h2::after {
+  content: "\2022";
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 1.2rem;
+}
+
+section p {
+  text-indent: 30px;
+  word-spacing: 0;
+}
+
+section#founder {
+  margin-bottom: 100px;
+}
+
+main img {
+  height: 300px;
+  width: 1000px;
+}
+
+p + img {
+  margin-top: 100px;
+}
+
+#team img {
+  width: 140px;
+  height: 150px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#team ul {
+  width: 850px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#team ul li {
+  display: inline-block;
+  width: 150px;
+  padding: 25px;
+}
+
+#team {
+  margin-bottom: 200px;
+}
+
+#team a {
+  display: block;
+  width: 140px;
+  text-decoration: none;
+  color: #3F56AF;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #E7E7E7;
+  height: 300px;
+  color: #B2B2B5;
+  text-align: center;
+  margin-bottom: 0;
+  display: block;
+  margin-top: 140px;
+}
+
+footer p {
+  padding-top: 85px;
+  padding-bottom: 10px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style-type: none;
+  height: 100%;
+  padding-top: 25px;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+footer ul {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  height: 100px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  background:
+    transparent
+    url("http://d3jtzah944tvom.cloudfront.net/202/projects/lesson_7/spacedesign/images/icons_social-media.png")
+    0 0 no-repeat;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  text-indent: -8685px;
+  width: 46px;
+}
+
+footer li a.twitter {
+  background-position: 0 0;
+}
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
+}

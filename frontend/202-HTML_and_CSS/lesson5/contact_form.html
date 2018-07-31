@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8" />
+    <style type='text/css'>
+      body {
+        font: normal 16px Helvetica, Arial, sans-serif;
+        background-color: #c0c0c0;
+      }
+
+      main {
+        width: 75%;
+        margin: auto;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      input[type='text'] {
+        height: 40px;
+        padding: 0 8px;
+        border: 1px solid #c0c0c0;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      label {
+        vertical-align: middle;
+      }
+
+      .side-by-side dl {
+        font-size: 0;
+        width: 100%;
+        border: none;
+      }
+
+      .side-by-side dt,
+      .side-by-side dd {
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 1rem;
+        vertical-align: middle;
+      }
+
+      .side-by-side dt {
+        padding-right: 1rem;
+        width: 25%;
+      }
+
+      .side-by-side dd {
+        width: 70%;
+      }
+
+      .side-by-side input[type="text"] {
+        width: 100%; /* Replaces 35% */
+      }
+
+      select {
+        -webkit-appearance: none;
+        width: 20%;
+      }
+
+      .all-one-line dd,
+      .all-one-line dt {
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 1rem;
+        vertical-align: middle;
+        width: 13%;
+        margin-left: 5px;
+      }
+
+      .all-one-line select {
+        width: 100%;
+      }
+
+      .buttons {
+        text-align: right;
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <fieldset>
+        <form action='#' class='styled-form top-to-bottom'>
+          <dl class='side-by-side'>
+            <dt><label for='side-by-side'>First Name: </label></dt>
+            <dd><input type='text' name='side-by-side' id='side-by-side' /></dd>
+            <dt><label for='last_name'>Last Name: </label></dt>
+            <dd><input type='text' name='last_name' id='last_name' /></dd>
+          </dl>
+          <dl class='side-by-side'>
+            <dt><label for='email'>Email Address: </label></dt>
+            <dd><input type='text' name='email' id='email' placeholder='user@gmail.com'/></dd>
+          </dl>
+          <dl class='all-one-line'>
+            <dt><label for='city'>City: </label></dt>
+            <dd><input type='text' name='city' id='city' /></dd>
+            <dt><label for='state'>State: </label></dt>
+            <dd>
+              <select name='state' id='state'>
+                <option>AK</option>
+                <option>AL</option>
+                <option>AR</option>
+                <option>AZ</option>
+                <option>CA</option>
+                <option>CO</option>
+                <option>CT</option>
+                <option>DC</option>
+                <option>DE</option>
+                <option>FL</option>
+                <option>GA</option>
+                <option>HI</option>
+                <option>IA</option>
+                <option>ID</option>
+                <option>IL</option>
+                <option>IN</option>
+                <option>KS</option>
+                <option>KY</option>
+                <option>LA</option>
+                <option>MA</option>
+                <option>MD</option>
+                <option>ME</option>
+                <option>MI</option>
+                <option>MN</option>
+                <option>MO</option>
+                <option>MS</option>
+                <option>MT</option>
+                <option>NC</option>
+                <option>ND</option>
+                <option>NE</option>
+                <option>NH</option>
+                <option>NJ</option>
+                <option>NM</option>
+                <option>NV</option>
+                <option>NY</option>
+                <option>OH</option>
+                <option>OK</option>
+                <option>OR</option>
+                <option>PA</option>
+                <option>RI</option>
+                <option>SC</option>
+                <option>SD</option>
+                <option>TN</option>
+                <option>TX</option>
+                <option>UT</option>
+                <option>VA</option>
+                <option>VT</option>
+                <option>WA</option>
+                <option>WI</option>
+                <option>WV</option>
+                <option>WY</option>
+              </select>
+            </dd>
+            <dt><label for='zip'>Zip Code: </label></dt>
+            <dd><input type='zip' name='zip' id='zip' placeholder='32806' /></dd>
+          </dl>
+          <dl class='buttons'>
+            <dd>
+              <input class='buttons' type='submit' />
+              <input class='buttons' type='reset' />
+            </dd>
+          </dl>
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>

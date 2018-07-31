@@ -1,0 +1,476 @@
+/*
+----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:  	Tantek Celik, Shane Riley
+    Version:  	(CC) 2010 Some Rights Reserved
+                - http://creativecommons.org/licenses/by/2.0
+Description:	Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6, pre, code { font-size: 1rem; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+fieldset,input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img, fieldset { border: none; }
+address { font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+
+mark {
+  color: inherit;
+  background: transparent;
+}
+
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  color: #444444;
+}
+
+main {
+  margin-top: 55px;
+}
+
+
+nav {
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: right;
+  border-bottom: 2px solid #F5F5F5;
+  background-color: white;
+}
+
+nav hr {
+  padding: 0;
+  margin: 0;
+  color: black;
+  border: none;
+  border-top: 10px solid #F5F5F5;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 26px 5px 26px;
+}
+
+nav ul a {
+  color: black;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+
+#banner {
+  background: url(images/front.jpg) center no-repeat;
+  height: 430px;
+  text-align: center;
+}
+
+#banner img {
+  padding-top: 150px;
+}
+
+#banner h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+#banner h2 {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+
+
+#tickets {
+  width: 98%;
+  border-bottom: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  text-align: center;
+  color: #444444;
+}
+
+#tickets h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-bottom: 35px;
+}
+
+#tickets a {
+  background-color: #00711F;
+  font-weight: bold;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+#tickets a:hover {
+  background-color: #00600E;
+}
+
+#speakers {
+  width: 98%;
+  border-bottom: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  margin: auto;
+  text-align: center;
+  color: #444444;
+}
+
+#speakers h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#speakers #bios {
+  max-width: 870px;
+  margin: auto;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#speakers #bios div {
+  width: 285px;
+  height: 380px;
+  background-color: white;
+  border: 2px solid #F5F5F5;
+}
+
+#speakers #bios img {
+  width: 100%;
+}
+
+#speakers #bios h3 {
+  color: #008116;
+  font-size: 1.5rem;
+  padding-top: 30px;
+}
+
+#speakers #bios h4 {
+  font-weight: lighter;
+  padding-top: 5px;
+}
+
+
+#schedule {
+  width: 98%;
+  border-bottom: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  margin: auto;
+  text-align: center;
+  color: #444444;
+}
+
+#schedule h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+#schedule section {
+  max-width: 955px;
+  margin: auto;
+}
+
+#schedule table {
+  max-width: 955px;
+  border-top: 1px solid #F5F5F5;
+  padding-bottom: 60px;
+}
+
+#schedule td {
+  text-align: left;
+  border-bottom: 1px solid #F5F5F5;
+  padding: 10px;
+}
+
+#schedule tr td:nth-child(3) {
+  text-align: right;
+}
+
+#schedule h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+#schedule h3 span {
+  font-size: .5rem;
+  padding: 0 3px;
+  background-color: #EEEEEE;
+  vertical-align: middle;
+  border: 1px solid #BBBBBB;
+  margin-right: 4px;
+}
+
+#schedule h4 {
+  padding-top: 10px;
+  font-size: 1.1rem;
+}
+
+#schedule h4 a {
+  color: #008116;
+}
+
+#schedule h4 a {
+  text-decoration: none;
+}
+
+#schedule h4 a:hover {
+  text-decoration: underline;
+}
+
+#schedule img {
+  width: 130px;
+  height: 100px;
+}
+
+#callforpapers {
+  margin: auto;
+  text-align: center;
+  max-width: 950px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+#callforpapers h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-bottom: 35px;
+  padding-top: 60px;
+}
+
+#callforpapers div {
+  font-weight: lighter; text-align: left;
+  padding-bottom: 60px;
+}
+
+#callforpapers p {
+  padding: 10px 0 10px 0;
+}
+
+#callforpapers p span {
+  background-color: #008000;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+}
+
+#callforpapers p span:hover {
+  background-color: #007000;
+}
+
+#callforpapers p a {
+  color: #008116;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#callforpapers p a:hover {
+  text-decoration: underline;
+}
+
+#sponsors {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#sponsors h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-bottom: 35px;
+  padding-top: 60px;
+}
+
+#sponsors section {
+  max-width: 950px
+  text-align: center;
+}
+
+#sponsors h3 {
+  max-width: 950px;
+  text-align: left;
+  margin: auto;
+}
+
+#sponsors #platinum {
+  max-width: 950px;
+  margin: auto;
+  text-align: left;
+}
+
+#sponsors #platinum img {
+  width: 300px;
+  height: 250px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#sponsors #gold {
+  max-width: 950px;
+  margin: auto;
+  text-align: left;
+}
+
+#sponsors #gold img {
+  width: 300px;
+  height: 250px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+#sponsors #silver {
+  max-width: 950px;
+  margin: auto;
+  text-align: left;
+}
+
+#sponsors #silver img {
+  width: 240px;
+  height: 200px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+#sponsors #support {
+  max-width: 950px;
+  margin: auto;
+  text-align: left;
+}
+
+#sponsors #support img {
+  width: 180px;
+  height: 150px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: url("images/people.jpg") center;
+  background-size: cover;
+}
+
+footer h1 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  color: white;
+}
+
+footer section {
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+footer div {
+  max-width: 950px;
+  text-align: left;
+  margin: auto;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer h2 {
+  font-size: 1.9rem;
+}
+
+footer div p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+footer div a {
+  color: #008116;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer div a:hover {
+  text-decoration: underline;
+}
+
+footer #jsconf-twitter {
+  background-color: #008116;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+footer #jsconf-twitter:hover {
+  background-color: #007005;
+}
+
+@media (max-width: 960px) {
+  #speakers #bios {
+    max-width: 580px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #speakers #bios {
+    max-width: 290px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+}

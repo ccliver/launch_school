@@ -1,0 +1,113 @@
+/* ----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:  	Tantek Celik, Shane Riley
+    Version:  	(CC) 2010 Some Rights Reserved
+                - http://creativecommons.org/licenses/by/2.0
+Description:	Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6, pre, code { font-size: 1rem; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+fieldset,input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img, fieldset { border: none; }
+address { font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+
+mark {
+  color: inherit;
+  background: transparent;
+}
+
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background-image: url("company_splash_page/bg_body.gif");
+  text-align: center;
+}
+
+#logo {
+  margin-top: 160px;
+  margin-bottom: 90px;
+}
+
+main {
+  width: 1000px;
+  height: 825px;
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+section#about {
+  padding-top: 95px;
+  margin-bottom: 150px;
+}
+
+main h2 {
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+main article {
+  text-align: center;
+  width: 835px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  letter-spacing: 0.055rem;
+  line-height: 1.8rem;
+}
+
+main h3 {
+  color: #3e98b2;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+main h2::before,
+main h2::after {
+  content: "\2022";
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.4rem;
+}
+
+section#founder {
+  margin-bottom: 55px;
+}
+
+footer {
+  background-color: #E7E7E7;
+  height: 110px;
+}
+
+footer ul {
+  list-style-type: none;
+  height: 100%;
+  padding-top: 25px;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-left: 60px;
+  padding-right: 60px;
+}

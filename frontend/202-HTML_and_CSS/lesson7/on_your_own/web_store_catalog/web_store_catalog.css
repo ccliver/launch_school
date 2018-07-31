@@ -1,0 +1,152 @@
+/*
+----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:  	Tantek Celik, Shane Riley
+    Version:  	(CC) 2010 Some Rights Reserved
+                - http://creativecommons.org/licenses/by/2.0
+Description:	Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6, pre, code { font-size: 1rem; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+fieldset,input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img, fieldset { border: none; }
+address { font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+
+mark {
+  color: inherit;
+  background: transparent;
+}
+
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+
+html {
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+  background-color: #FFD738;
+}
+
+main {
+  width: 985px;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  background-color: #007CBE;
+  color: white;
+  width: 870px;
+  height: 65px;
+  padding-top: 32px;
+  padding-left: 28px;
+  padding-bottom: 10px;
+  border-radius: 0 0 17px 17px;
+  margin: auto;
+  font-size: 2.4rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+section {
+  background-color: #ECECEC;
+  width: 880px;
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 240px);
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  width: auto;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.catalog div {
+  background-color: white;
+  width: auto;
+}
+
+.catalog img {
+  width: auto;
+  height: 140px;
+  padding-top: 20px;
+}
+
+.catalog h3 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 15px;
+  padding-left: 15px;
+  vertical-align: bottom;
+}
+
+.catalog p {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.catalog figure {
+  width: auto;
+  height: 165px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input:checked + figure img {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 400px;
+  height: auto;
+  margin: 0 0 0 -200px;
+  z-index: 2;
+}
+
+input:checked + figure:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  background-color: rgba(0, 0, 0, .4);
+}

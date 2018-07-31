@@ -1,0 +1,399 @@
+/*
+----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:  	Tantek Celik, Shane Riley
+    Version:  	(CC) 2010 Some Rights Reserved
+                - http://creativecommons.org/licenses/by/2.0
+Description:	Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6, pre, code { font-size: 1rem; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+fieldset,input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img, fieldset { border: none; }
+address { font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+
+mark {
+  color: inherit;
+  background: transparent;
+}
+
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: .1rem;
+}
+
+label {
+  cursor: pointer;
+  display: inline;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+#nav-toggle:checked ~ #container {
+  display: grid;
+  grid-template-columns: 335px 1fr;
+  grid-template-rows: 820px;
+}
+
+#nav-toggle:checked ~ #container nav {
+  display: block;
+  float: left;
+}
+
+#nav-toggle:checked ~ label img {
+  margin-left: 335px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 335px minmax(80%, 865px);
+  grid-template-rows: 820px;
+}
+
+nav {
+  background-color: #464f77;
+  color: white;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  margin-top: 70px;
+}
+
+nav ul:nth-child(2) {
+  margin-top: 50px;
+}
+
+nav li {
+  height: 40px;
+  text-align: left;
+  line-height: 40px;
+  color: rgb(204, 206, 216);
+}
+
+nav img {
+  vertical-align: middle;
+  margin-left: 100px;
+}
+
+nav h3 {
+  display: inline-block;
+  font-weight: lighter;
+  margin-right: 20px;
+  vertical-align: center;
+  padding-left: 10px;
+}
+
+nav li:first-child h3 {
+  color: white;
+}
+
+.nav-todo {
+  padding-left: 128px;
+}
+
+nav span {
+  margin-left: 50px;
+}
+
+nav .nav-todo span {
+  margin-left: 85px;
+}
+
+nav li.active {
+  background-color: rgb(56, 62, 94);
+}
+
+nav span.todo-count {
+  background-color: #6b7292;
+  border-radius: 45%;
+  font-size: .8rem;
+  color: white;
+  padding: 1px 4px 1px 4px;
+}
+
+nav span.active {
+  background-color: #148fd5;
+  border-radius: 50%;
+  font-size: .8rem;
+  color: white;
+  padding: 0 4px 0 4px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #b2b5c3;
+}
+
+nav li.completed-todo a {
+  text-decoration: line-through;
+}
+
+#hamburger {
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+main {
+  max-width: 85%;
+  width: 865px;
+  height: 820px;
+}
+
+main #todos {
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-right: 100px;
+}
+
+main h2 {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#todo-list li {
+  height: 50px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  text-align: left;
+  line-height: 50px;
+}
+
+#todo-list li:last-child {
+  border: none;
+}
+
+#todo-list img {
+  vertical-align: middle;
+}
+
+#todo-list h3 {
+  font-weight: lighter;
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+#todo-list li:nth-child(2) h3 {
+  margin-left: 10px;
+}
+
+#todo-list h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+#todo-list h3 a:hover {
+  color: rgb(0, 141, 210);
+}
+
+
+#todo-list li:first-child h3 {
+  color: rgb(0, 141, 210);
+}
+
+.trash {
+  float: right;
+  padding-top: 15px;
+}
+
+#todo-list li:nth-child(4) h3 a,
+#todo-list li:nth-child(5) h3 a,
+#todo-list li:nth-child(6) h3 a {
+  text-decoration: line-through;
+  color: rgb(179, 179, 179);
+}
+
+main .todo-count {
+  background-color: rgb(0, 141, 210);
+  border-radius: 50%;
+  font-size: .85rem;
+  color: white;
+  padding: 1px 4px 1px 4px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.modal-dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 335px;
+    height: 820px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+}
+
+.modal-dialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modal-dialog > form {
+    width: 575px;
+    height: 360px;
+    position: relative;
+    margin-top: 175px;
+    margin-left: 5%;
+    padding: 0 20px 0 20px;
+    background: #fff;
+}
+
+form.side-by-side {
+  padding-right: 40px;
+  padding-top: 25px;
+  font-weight: normal;
+}
+
+.side-by-side dl {
+  font-size: 0;
+}
+
+.side-by-side dt,
+.side-by-side dd {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+.side-by-side dt {
+  padding-right: 1rem;
+  width: 140px
+}
+
+.side-by-side dd {
+  width: 370px;
+  margin-bottom: 10px;
+}
+
+.side-by-side input[type="text"] {
+  width: 100%;
+  height: 32px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
+}
+
+.side-by-side select {
+  width: 113px;
+  height: 32px;
+  border: 1px solid #b3b3b3;
+  font-size: 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("assessment_209/select.png");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-radius: 0;
+  margin-left: 3.5px;
+}
+
+.side-by-side select:first-child {
+  margin-left: 0;
+}
+
+.side-by-side #due_date {
+  width: 430px;
+}
+
+.side-by-side textarea {
+  width: 370px;
+  height: 140px;
+  padding: 5px;
+  color: #b3b3b3;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
+  resize: none;
+}
+
+#description_label {
+  line-height: 35px;
+  vertical-align: top;
+}
+
+.side-by-side input[type="submit"] {
+  width: 180px;
+  height: 35px;
+  background-color: #148fd5;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 17px; 
+  border-radius: 5px;
+}
+
+#form-buttons {
+  padding-left: 125px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 820px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hamburger {
+    display: inline;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
+  .modal-dialog {
+    left: 0;
+  }
+}
+
+@media (max-width: 1030px) {
+  .modal-dialog > form {
+    margin-left: 0;
+  }
+}
